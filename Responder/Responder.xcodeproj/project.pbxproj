@@ -8,39 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		DC84628B272946D300523021 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84628A272946D300523021 /* AppDelegate.m */; };
-		DC84628E272946D300523021 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84628D272946D300523021 /* SceneDelegate.m */; };
 		DC846291272946D300523021 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC846290272946D300523021 /* ViewController.m */; };
-		DC846294272946D300523021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC846292272946D300523021 /* Main.storyboard */; };
 		DC846296272946D500523021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC846295272946D500523021 /* Assets.xcassets */; };
 		DC846299272946D500523021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC846297272946D500523021 /* LaunchScreen.storyboard */; };
 		DC84629C272946D500523021 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84629B272946D500523021 /* main.m */; };
-		DC8462A52729473800523021 /* KKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462A42729473800523021 /* KKButton.m */; };
-		DC8462AB2729475600523021 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462AA2729475600523021 /* KKView.m */; };
-		DC8462AE27294D3B00523021 /* KKViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462AD27294D3B00523021 /* KKViewA.m */; };
-		DC8462B127294D4500523021 /* KKViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462B027294D4500523021 /* KKViewB.m */; };
+		DC8462B4272A7A4A00523021 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462B3272A7A4A00523021 /* BackgroundView.m */; };
+		DC8462B7272A7B2200523021 /* YellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462B6272A7B2200523021 /* YellowView.m */; };
+		DC8462BA272A7BA400523021 /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462B9272A7BA400523021 /* BlueView.m */; };
+		DC8462BD272A7C1200523021 /* GreyView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462BC272A7C1200523021 /* GreyView.m */; };
+		DC8462C0272A7CBE00523021 /* PinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462BF272A7CBE00523021 /* PinkView.m */; };
+		DC8462C3272A7D5600523021 /* CyanView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462C2272A7D5600523021 /* CyanView.m */; };
+		DC8462C9272A7F7300523021 /* MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462C8272A7F7300523021 /* MyUIView.m */; };
+		DC8462CD272A858700523021 /* MyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462CC272A858700523021 /* MyWindow.m */; };
+		DC8462D0272A8ACE00523021 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462CF272A8ACE00523021 /* MyButton.m */; };
+		DC8462D3272A8D0700523021 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462D2272A8D0700523021 /* MyTableView.m */; };
+		DC8462D6272A909600523021 /* MyUITapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8462D5272A909600523021 /* MyUITapGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC846286272946D300523021 /* Responder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Responder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC846289272946D300523021 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC84628A272946D300523021 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC84628C272946D300523021 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		DC84628D272946D300523021 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		DC84628F272946D300523021 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DC846290272946D300523021 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DC846293272946D300523021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC846295272946D500523021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC846298272946D500523021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC84629A272946D500523021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC84629B272946D500523021 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DC8462A32729473800523021 /* KKButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKButton.h; sourceTree = "<group>"; };
-		DC8462A42729473800523021 /* KKButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKButton.m; sourceTree = "<group>"; };
-		DC8462A92729475600523021 /* KKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKView.h; sourceTree = "<group>"; };
-		DC8462AA2729475600523021 /* KKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKView.m; sourceTree = "<group>"; };
-		DC8462AC27294D3B00523021 /* KKViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKViewA.h; sourceTree = "<group>"; };
-		DC8462AD27294D3B00523021 /* KKViewA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKViewA.m; sourceTree = "<group>"; };
-		DC8462AF27294D4500523021 /* KKViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKViewB.h; sourceTree = "<group>"; };
-		DC8462B027294D4500523021 /* KKViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKViewB.m; sourceTree = "<group>"; };
+		DC8462B2272A7A4A00523021 /* BackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		DC8462B3272A7A4A00523021 /* BackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		DC8462B5272A7B2200523021 /* YellowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowView.h; sourceTree = "<group>"; };
+		DC8462B6272A7B2200523021 /* YellowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowView.m; sourceTree = "<group>"; };
+		DC8462B8272A7BA400523021 /* BlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		DC8462B9272A7BA400523021 /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
+		DC8462BB272A7C1200523021 /* GreyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreyView.h; sourceTree = "<group>"; };
+		DC8462BC272A7C1200523021 /* GreyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreyView.m; sourceTree = "<group>"; };
+		DC8462BE272A7CBE00523021 /* PinkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinkView.h; sourceTree = "<group>"; };
+		DC8462BF272A7CBE00523021 /* PinkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinkView.m; sourceTree = "<group>"; };
+		DC8462C1272A7D5600523021 /* CyanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyanView.h; sourceTree = "<group>"; };
+		DC8462C2272A7D5600523021 /* CyanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyanView.m; sourceTree = "<group>"; };
+		DC8462C7272A7F7300523021 /* MyUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUIView.h; sourceTree = "<group>"; };
+		DC8462C8272A7F7300523021 /* MyUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUIView.m; sourceTree = "<group>"; };
+		DC8462CA272A803900523021 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DC8462CB272A858700523021 /* MyWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWindow.h; sourceTree = "<group>"; };
+		DC8462CC272A858700523021 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
+		DC8462CE272A8ACE00523021 /* MyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		DC8462CF272A8ACE00523021 /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		DC8462D1272A8D0700523021 /* MyTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		DC8462D2272A8D0700523021 /* MyTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
+		DC8462D4272A909600523021 /* MyUITapGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUITapGestureRecognizer.h; sourceTree = "<group>"; };
+		DC8462D5272A909600523021 /* MyUITapGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUITapGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +95,6 @@
 				DC846290272946D300523021 /* ViewController.m */,
 				DC846289272946D300523021 /* AppDelegate.h */,
 				DC84628A272946D300523021 /* AppDelegate.m */,
-				DC84628C272946D300523021 /* SceneDelegate.h */,
-				DC84628D272946D300523021 /* SceneDelegate.m */,
-				DC846292272946D300523021 /* Main.storyboard */,
 				DC846295272946D500523021 /* Assets.xcassets */,
 				DC846297272946D500523021 /* LaunchScreen.storyboard */,
 				DC84629A272946D500523021 /* Info.plist */,
@@ -92,14 +106,29 @@
 		DC8462A22729472200523021 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DC8462A32729473800523021 /* KKButton.h */,
-				DC8462A42729473800523021 /* KKButton.m */,
-				DC8462A92729475600523021 /* KKView.h */,
-				DC8462AA2729475600523021 /* KKView.m */,
-				DC8462AC27294D3B00523021 /* KKViewA.h */,
-				DC8462AD27294D3B00523021 /* KKViewA.m */,
-				DC8462AF27294D4500523021 /* KKViewB.h */,
-				DC8462B027294D4500523021 /* KKViewB.m */,
+				DC8462CA272A803900523021 /* PrefixHeader.pch */,
+				DC8462D4272A909600523021 /* MyUITapGestureRecognizer.h */,
+				DC8462D5272A909600523021 /* MyUITapGestureRecognizer.m */,
+				DC8462CB272A858700523021 /* MyWindow.h */,
+				DC8462CC272A858700523021 /* MyWindow.m */,
+				DC8462D1272A8D0700523021 /* MyTableView.h */,
+				DC8462D2272A8D0700523021 /* MyTableView.m */,
+				DC8462C7272A7F7300523021 /* MyUIView.h */,
+				DC8462C8272A7F7300523021 /* MyUIView.m */,
+				DC8462CE272A8ACE00523021 /* MyButton.h */,
+				DC8462CF272A8ACE00523021 /* MyButton.m */,
+				DC8462B2272A7A4A00523021 /* BackgroundView.h */,
+				DC8462B3272A7A4A00523021 /* BackgroundView.m */,
+				DC8462B5272A7B2200523021 /* YellowView.h */,
+				DC8462B6272A7B2200523021 /* YellowView.m */,
+				DC8462B8272A7BA400523021 /* BlueView.h */,
+				DC8462B9272A7BA400523021 /* BlueView.m */,
+				DC8462BB272A7C1200523021 /* GreyView.h */,
+				DC8462BC272A7C1200523021 /* GreyView.m */,
+				DC8462BE272A7CBE00523021 /* PinkView.h */,
+				DC8462BF272A7CBE00523021 /* PinkView.m */,
+				DC8462C1272A7D5600523021 /* CyanView.h */,
+				DC8462C2272A7D5600523021 /* CyanView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -163,7 +192,6 @@
 			files = (
 				DC846299272946D500523021 /* LaunchScreen.storyboard in Resources */,
 				DC846296272946D500523021 /* Assets.xcassets in Resources */,
-				DC846294272946D300523021 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,28 +202,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8462B127294D4500523021 /* KKViewB.m in Sources */,
+				DC8462CD272A858700523021 /* MyWindow.m in Sources */,
+				DC8462C9272A7F7300523021 /* MyUIView.m in Sources */,
+				DC8462B4272A7A4A00523021 /* BackgroundView.m in Sources */,
+				DC8462D0272A8ACE00523021 /* MyButton.m in Sources */,
 				DC846291272946D300523021 /* ViewController.m in Sources */,
+				DC8462C0272A7CBE00523021 /* PinkView.m in Sources */,
 				DC84628B272946D300523021 /* AppDelegate.m in Sources */,
+				DC8462D6272A909600523021 /* MyUITapGestureRecognizer.m in Sources */,
 				DC84629C272946D500523021 /* main.m in Sources */,
-				DC8462A52729473800523021 /* KKButton.m in Sources */,
-				DC84628E272946D300523021 /* SceneDelegate.m in Sources */,
-				DC8462AE27294D3B00523021 /* KKViewA.m in Sources */,
-				DC8462AB2729475600523021 /* KKView.m in Sources */,
+				DC8462D3272A8D0700523021 /* MyTableView.m in Sources */,
+				DC8462C3272A7D5600523021 /* CyanView.m in Sources */,
+				DC8462B7272A7B2200523021 /* YellowView.m in Sources */,
+				DC8462BA272A7BA400523021 /* BlueView.m in Sources */,
+				DC8462BD272A7C1200523021 /* GreyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DC846292272946D300523021 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC846293272946D300523021 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC846297272946D500523021 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -327,11 +353,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73CD6LSN38;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/jianqin/Documents/个人/Responder/Responder/Responder/Classes/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Responder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -354,11 +381,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73CD6LSN38;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/jianqin/Documents/个人/Responder/Responder/Responder/Classes/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Responder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

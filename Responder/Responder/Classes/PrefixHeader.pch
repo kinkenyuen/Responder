@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  Responder
+//
+//  Created by jianqin_ruan on 2021/10/28.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s\n",[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */
