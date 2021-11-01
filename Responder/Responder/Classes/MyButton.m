@@ -38,4 +38,25 @@
     [super touchesCancelled:touches withEvent:event];
 }
 
+
+- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+    NSLog(@"kk | beginTrackingWithTouch : %@", self.restorationIdentifier);
+    return [super beginTrackingWithTouch:touch withEvent:event];
+}
+
+- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+    NSLog(@"kk | continueTrackingWithTouch : %@", self.restorationIdentifier);
+    return [super continueTrackingWithTouch:touch withEvent:event];
+}
+
+- (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+    NSLog(@"kk | endTrackingWithTouch : %@", self.restorationIdentifier);
+    return [super endTrackingWithTouch:touch withEvent:event];
+}
+
+- (void)cancelTrackingWithEvent:(UIEvent *)event {
+    NSLog(@"kk | cancelTrackingWithEvent : %@", self.restorationIdentifier);
+    return [super cancelTrackingWithEvent:event];
+}
+
 @end

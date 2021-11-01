@@ -88,13 +88,82 @@
 // 持续型手势
 // 如果父视图存在手势识别器，且在触摸事件传递过程中被手势识别器成功识别后
 // 会由手势识别器处理，而取消触摸事件机制，也就是说Window首先将事件传给识别了的手势识别器处理
+// 一开始拖动手势还没被完全识别，所以会有touches系列的触摸事件响应方法调用
 - (void)_test1 {
     YellowView *yellowView = [[YellowView alloc] init];
     yellowView.frame = CGRectMake(30, 100, 300, 200);
     [self.view addSubview:yellowView];
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(_pan)];
+    
+    // 表示触摸事件仍然会发送给hit-tested view
+//    pan.cancelsTouchesInView = NO;
+    
+    // 表示触摸事件在被手势识别出结果之前，都不将触摸事件传递给hit-tested view
+//    pan.delaysTouchesBegan = YES;
+    
+    /* 默认为YES。这种情况下发生一个touch时，在手势识别成功后,发送给touchesCancelled消息给hit-testview，手势识别失败时，会延迟大概0.15ms,期间没有接收到别的touch才会发送touchesEnded
+        如果设置为NO，则不会延迟，即会立即发送touchesEnded以结束当前触摸
+     */
+//    pan.delaysTouchesEnded = NO;
+    
     [self.view addGestureRecognizer:pan];
+}
+
+// 手势与target-action混合
+// 一个按钮添加到一个view上，view绑定手势，按钮添加target-action
+// 效果是优先触发target-action
+/*
+ kk | -[MyUITapGestureRecognizer touchesBegan:withEvent:]
+ kk | touchesBegan : MyButton
+ kk | beginTrackingWithTouch : MyButton
+ kk | -[MyUITapGestureRecognizer touchesEnded:withEvent:]
+ kk | touchesEnded : MyButton
+ kk | endTrackingWithTouch : MyButton
+ kk | Control触发
+ */
+- (void)_test2 {
+    YellowView *yellowView = [[YellowView alloc] init];
+    yellowView.frame = CGRectMake(30, 100, 300, 200);
+    [self.view addSubview:yellowView];
+    MyUITapGestureRecognizer *tap = [[MyUITapGestureRecognizer alloc] initWithTarget:self action:@selector(_tap)];
+    [yellowView addGestureRecognizer:tap];
+    
+    MyButton *button = [[MyButton alloc] initWithFrame:CGRectMake(20, 20, 0, 0)];
+    [button setTitle:@"按钮点击" forState:UIControlStateNormal];
+    [button setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(_buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    [button sizeToFit];
+    [button setBackgroundColor:UIColor.whiteColor];
+    [yellowView addSubview:button];
+}
+
+// 手势与target-action混合
+// 一个按钮添加到一个view上，按钮绑定手势的同事，又添加target-action
+// 效果是优先触发手势
+/*
+ kk | -[MyUITapGestureRecognizer touchesBegan:withEvent:]
+ kk | touchesBegan : MyButton
+ kk | beginTrackingWithTouch : MyButton
+ kk | -[MyUITapGestureRecognizer touchesEnded:withEvent:]
+ kk | 点击手势触发
+ kk | touchesCancelled : MyButton
+ kk | cancelTrackingWithEvent : MyButton
+ */
+- (void)_test3 {
+    YellowView *yellowView = [[YellowView alloc] init];
+    yellowView.frame = CGRectMake(30, 100, 300, 200);
+    [self.view addSubview:yellowView];
+    
+    MyButton *button = [[MyButton alloc] initWithFrame:CGRectMake(20, 20, 0, 0)];
+    [button setTitle:@"按钮点击" forState:UIControlStateNormal];
+    [button setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(_buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    [button sizeToFit];
+    [button setBackgroundColor:UIColor.whiteColor];
+    [yellowView addSubview:button];
+    MyUITapGestureRecognizer *tap = [[MyUITapGestureRecognizer alloc] initWithTarget:self action:@selector(_tap)];
+    [button addGestureRecognizer:tap];
 }
 
 - (void)viewDidLoad {
@@ -105,6 +174,8 @@
 //    [self _gesture_touch_targetAction];
 //    [self _test];
 //    [self _test1];
+//    [self _test2];
+    [self _test3];
 }
 
 #pragma mark <UITableViewDelegate, UITableViewDataSource>
